@@ -8,6 +8,23 @@
 
 /* Colors */
 
+@media (max-width: 768px) {
+  .skills_list {
+    grid-template-columns: 1fr; /* 1 per row on small screens */
+  }
+}
+  .skills_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  gap: 20px; /* space between items */
+}
+
+.skills_data {
+  background: #f8f8f8; /* optional */
+  padding: 10px;
+  border-radius: 8px;
+}
+
 :root {
   --first-color: #fa9906;
   --second-color: #0e2431;
@@ -133,6 +150,7 @@ img {
     transition: 0.5s;
   }
 }
+
 
 .nav_items {
   margin-bottom: var(--mb-4);
@@ -291,6 +309,7 @@ img {
 .skills_container {
   row-gap: 2rem;
   text-align: center;
+   justify-content: center; /* center horizontally */
 }
 
 .skills_subtitle {
